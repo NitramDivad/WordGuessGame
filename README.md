@@ -1,4 +1,4 @@
-#**Option Two: Hangman Game (Recommended)**
+# **Option Two: Hangman Game (Recommended)** #
 
 Week 03 Homework Assignment -
 
@@ -14,19 +14,20 @@ The game will utilize the general theme of World Cities
 
     4.  The Cities database utilizes key value pairs, allowing a "hint" for the country
 
-    5.  Button inputs were created to Reset the game, start the game, and continue to another round
+    5.  Button inputs were created to Reset the Game, Start the Game, and Continue Play to another round
 
     6.  Game is setup with 25 potential rounds.  After each round, "Continue Play" should be selected
 
-    7.  A round (city) is randomly selected but will not be repeated for any 25-round game.
+    7.  A round (city) is randomly selected but will not be repeated for any 25-round game
 
-    8.  The use of a "space" is allowed.
+    8.  The use of a "space" is allowed
 
-    9.  Game is over once all 25 rounds have been played.
+    9.  Game is over once all 25 rounds have been played
 
-    10.  Resetting the game will start the game over.
+    10.  Resetting the game will start the game over
 
 
-##**Created by:**
+## **Created by:** #
 
-[David Martin](mailto:webdevelopment.du@gmail.com()
+[David Martin](mailto:webdevelopment.du@gmail.com)
+[GitHub](https://github.com/nitramdivad)
