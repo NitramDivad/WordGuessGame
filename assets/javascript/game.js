@@ -400,7 +400,7 @@
                         }
                     }
                     else {
-                        SetAlert("You've already selected that letter.  Please choose another.","");
+                        SetAlert("You've already selected that letter.  Please choose again.","");
                     }
                 }
                 else {
