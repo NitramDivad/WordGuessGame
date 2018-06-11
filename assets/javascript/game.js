@@ -26,13 +26,16 @@
 
             IsLoser: function() {
                 if (this.numGuessesRemaining === 0) {
+                    var audio = new Audio('assets/sounds/Booing.mp3');
+                    audio.play();
+
                     cityIsDone = true;
                     this.numLosses++;
                     document.getElementById("scrLosses").innerHTML = this.numLosses;
                     document.getElementById("reset-btn").disabled = false;
                     document.getElementById("playAgain-btn").disabled = false;
                     document.getElementById("gameHint").innerHTML = "You Lost!! [" + this.strWhichCity + "]";
-                    
+
                     if (lastGame)
                         this.GameOver();
                 }
@@ -52,6 +55,9 @@
 
             IsWinner: function() {
                 if (this.numCorrectLetters === this.strWhichCity.length) {
+                    var audio = new Audio('assets/sounds/Cheering.mp3');
+                    audio.play();
+
                     cityIsDone = true;
                     this.numWins++;
                     document.getElementById("scrWins").innerHTML = this.numWins;
