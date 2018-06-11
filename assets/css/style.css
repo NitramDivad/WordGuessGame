@@ -4,10 +4,11 @@ body {
 
 header, footer {
     color: white;
+    height: 35px;
 }
 
-footer {
-    height: 45px;
+header {
+    margin-bottom: 10px;
 }
 
 #status {
