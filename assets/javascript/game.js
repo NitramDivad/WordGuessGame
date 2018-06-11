@@ -208,9 +208,9 @@
 
         document.getElementById("gameHint").innerHTML = "";
 
-        document.getElementById("scrWins").innerHTML = "";
-        document.getElementById("scrLosses").innerHTML = "";
-        document.getElementById("scrGuesses").innerHTML = "";
+        document.getElementById("scrWins").innerHTML = "0";
+        document.getElementById("scrLosses").innerHTML = "0";
+        document.getElementById("scrGuesses").innerHTML = "-";
 
         document.getElementById("start-btn").disabled = false;
         document.getElementById("reset-btn").disabled = false;
@@ -360,39 +360,35 @@
             
                 if (arrAlphabet.indexOf(keyPressed) > -1) {
                     if (keyPressed === "sp")
-                    keyPressed = " ";
+                        keyPressed = " ";
 
                     if (hangman.arrLettersGuessed.indexOf(keyPressed) === -1) {
                         hangman.ChooseLetter(keyPressed);
-                        if (keyPressed !== " ") {
+                        if (keyPressed !== " ")
                             document.getElementById("ltr" + keyPressed.toUpperCase()).style.visibility = "hidden";
-                        }
-                        else {
+                        else
                             document.getElementById("ltrSP").style.visibility = "hidden";
-                        }
 
                         if (whichCity.indexOf(keyPressed) > -1) {
                             numMatches = CountDuplicateLetters(whichCity,keyPressed);
                             if (numMatches === 1) {
                                 idxKey = whichCity.indexOf(keyPressed);
-                                if (keyPressed !== " ") {
+                                if (keyPressed !== " ")
                                     hangman.RightGuess(keyPressed + parseInt(idxKey));
-                                }
-                                else {
+                                else
                                     hangman.RightGuess("sp" + parseInt(idxKey));
-                                }
+
                                 hangman.IsWinner();
                             }
                             else {
                                 indexes = GetAllIndexVals(hangman.strWhichCity,keyPressed);
                                 for (i = 0; i < indexes.length; i++) {
                                     idxKey = indexes[i];
-                                    if (keyPressed !== " ") {
+                                    if (keyPressed !== " ")
                                         hangman.RightGuess(keyPressed + parseInt(idxKey));
-                                    }
-                                    else {
+                                    else
                                         hangman.RightGuess("sp" + parseInt(idxKey));
-                                    }
+
                                     hangman.IsWinner();
                                 }
                             }
@@ -447,6 +443,10 @@
         PopulateAlphabet();
         PopulateAlphabetImages();
         PopulateArrayDB();
+
+        document.getElementById("scrWins").innerHTML = "0";
+        document.getElementById("scrLosses").innerHTML = "0";
+        document.getElementById("scrGuesses").innerHTML = "-";
 
         document.getElementById("hangman-img").src = "assets/images/Hangman0.png";
 
