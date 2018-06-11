@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Hangman - Cities Around the World</title>
+</head>
+
+<body>
+
+    <header class="bg-dark sticky-top text-center col-md-12">
+        <h2>Hangman - Cities Around the World</h1>
+    </header>
+     
+    <div class="container">    
+        <div class="row">
+            <div class="col-md-3" id="infoArea">
+                <div class="row" id="instructArea">
+                    <p>INSTRUCTIONS:<br>
+                       - 25 rounds of play are possible.<br>
+                       - A space is a valid key press.<br>
+                       - Press a keyboard letter for input,<br>
+                       &nbsp; &nbsp; or click on a letter tile for input.<br>
+                       - Reset The Game sets game to new.<br><br>
+                       - Click Start The Game to begin!</p>
+                </div>
+                <div class="row content justify-content-center" id="noticesArea"></div>
+            </div>
+            <div class="col-md-6" id="gamePlay">
+                <div class="row justify-content-center align-items-center" id="gallows">
+                    <img id="hangman-img" src="" alt="hangman gallows">
+                </div>
+                <div class="row justify-content-center" id="gameHint"></div>
+            </div>
+
+            <div class="col-md-3" id="status">
+                <div id="numWins">
+                    <div class="row content justify-content-center">Wins</div>
+                    <div class="row content justify-content-center display-4" id="scrWins"></div>
+                </div>
+                <div id="numLosses">
+                    <div class="row content justify-content-center">Losses</div>
+                    <div class="row content justify-content-center display-4" id="scrLosses"></div>
+                </div>
+                <div id="numGuesses">
+                    <div class="row content justify-content-center">Guesses Remaining</div>
+                    <div class="row content justify-content-center display-4" id="scrGuesses"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="row justify-content-center align-items-center" id="ltrGuessTiles"></div>
+        </div>
+        <div class="row content">
+            <div class="row justify-content-center align-items-center" id="alphabet-imgs"></div>
+        </div>
+        <div class="row content" id="controls">
+            <div class="col-md-4" id="btnReset">
+                <button id="reset-btn" onclick="ResetGame()">Reset The Game</button>
+            </div>
+            <div class="col-md-4" id="btnStart">
+                 <button id="start-btn" onclick="StartGame()">Start The Game</button>
+            </div>
+            <div class="col-md-4" id="btnPlayAgain">
+                <button id="playAgain-btn" onclick="PlayAgain()" disabled>Continue Play</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer-copyright text-center fixed-bottom bg-dark">
+        <span>Hangman - Cities Around the World &copy; David Martin</span>
+    </footer>
+
+    <script src="assets/javascript/game.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
