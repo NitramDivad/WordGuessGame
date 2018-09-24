@@ -30,6 +30,9 @@ The game will utilize the general theme of World Cities
 ## **Created by:** #
 
 [David Martin](mailto:webdevelopment.du@gmail.com)
-[GitHub](https://github.com/nitramdivad)
 
-[Launch Site](https://github.com/nitramdivad/WordGuessGame/)
+## **Links:** #
+
+| [Word Guess Game](https://github.com/nitramdivad/WordGuessGame/) | 
+[Portfolio Site](https://nitramdivad.github.io/) | 
+[GitHub](https://github.com/nitramdivad) |
